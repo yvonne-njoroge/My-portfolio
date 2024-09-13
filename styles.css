@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f0f0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10%;
+    background:aquamarine;
+    color:black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding-left: 60px;
+
+}
+header {
+    /* background:antiquewhite; */
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background3.jpg);
+    background-size:cover;
+    background-position: top;
+    color:white;
+    text-align: center;
+    position: relative;
+    padding: 40px 0; 
+   
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 60vh;
+
+}
+.header-text{
+    width: 50%;
+}
+.image-container{
+    width: 50%;
+}
+.image-container img{
+    width: 100%;
+    max-width: 300px;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: aqua;
+}
+
+.header-content p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* .wave {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('wave.svg') repeat-x;
+} */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin-bottom: 20px;
+}
+
+#projects img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project-info {
+    margin: 10px;
+    max-width: 400px;
+}
+
+#projects h3 {
+    margin: 0 0 10px;
+}
+#about{
+    background-color: antiquewhite;
+}
+#about h2{
+    font-size: 2rem;
+    
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.about-text{
+    width: 50%;
+}
+.about-image{
+    width:50%;
+    height: 350px;
+}
+.about-image img{
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#skills{
+    /* background-image: url(images/background2.jpg); */
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#resume{
+    background-image: url(images/background3.jpg);
+    background-size:cover;
+    background-position: right;
+    min-height: 30vh;
+}
+#resume h2{
+    color: aqua;
+    padding-bottom: 20px;
+}
+#resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact{
+    background-color: rgba(127, 255, 212, 0.789);
+   
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+form input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+form button{
+    padding: 10px 30px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #about .about-content,
+    #projects .project {
+        flex-direction: column;
+    }
+}
